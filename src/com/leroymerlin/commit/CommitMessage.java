@@ -46,9 +46,8 @@ class CommitMessage {
         builder.append(changeType.label());
         if (isNotBlank(changeScope)) {
             builder
-                    .append('(')
-                    .append(changeScope)
-                    .append(')');
+                    .append('/')
+                    .append(changeScope);
         }
         builder
                 .append(": ")
